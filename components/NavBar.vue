@@ -1,5 +1,5 @@
 <template>
-    <header class="md:border-b mt-2">
+    <header class="md:border-b">
         <nav class="flex items-center justify-between px-4 mx-auto">
 
             <div class="flex items-center gap-4">

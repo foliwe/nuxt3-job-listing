@@ -1,7 +1,6 @@
 <template>
-    <div class>
-        <section class="searchForm grid place-content-center mt-7 md:mt-12">
-            <form action="" class="">
+    <div>
+        <form action="" class="">
                 <div class="flex justify-center flex-col w-screen  px-3 mx-auto gap-3 md:flex-row">
 
                     <div class="w-full flex md:w-3/12 items-center relative">
@@ -32,19 +31,6 @@
 
                 </div>
             </form>
-            <div class="flex-col justify-center text-center p-6 hidden md:flex gap-20 h-90">
-                <div class="">
-                    <p> <span class="text-blue-700 font-bold">Upload your CV -</span>It only takes a few seconds</p>
-                    <p> <span class="text-blue-700 font-bold">Employers:post a job-</span> Your next hired candidate is here</p>
-                </div>
-                <div class="flex justify-center items-end gap-2">
-                    <p class="text-sm">
-                        What's trending on indeed 
-                    </p>
-                    <span class=""> <IconsChevronDown/> </span>
-                </div>
-            </div>
-        </section>
     </div>
 </template>
 
@@ -52,6 +38,3 @@
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
