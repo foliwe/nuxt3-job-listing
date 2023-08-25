@@ -9,7 +9,7 @@
 
 <section class="maintitle container mx-auto  px-3 md:px-1">
     <div class="heading py-3 border-b ">
-        <h1 class=""> My Dashboard</h1>
+        <h1 class=""> {{ getPageName($route.name) }}</h1>
     </div>
 
     <main class="grid md:grid-cols-[.5fr_2.3fr_.5fr] gap-3">
@@ -30,10 +30,13 @@
 
 </template>
 
-<script setup>
-const route = useRoute()
-const all = route.params.pageName
-console.log(all);
+<script lang="ts" setup>
+import getPageName from '@/composables/get-page-name'
+const pageName = (
+  useRouter().currentRoute.value!.matched[0]['components']!.default as {
+    __name: string;
+  }
+)['__name'];
 </script>
 
 
